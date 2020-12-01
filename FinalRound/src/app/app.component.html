@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="comp1" id="comp1">
+    <div class="helloBlock" id="helloBlock">
+      <h1 class="hello" id="hello">Hello friend!</h1>
+      <div class="border"></div>
+      <div class="socialLinks">
+        <img class="socialIcons1" src="../assets/facebook.png">
+        <img class="socialIcons2" src="../assets/facebook.png">
+      </div>
+      <p class="text1" id="text1">or use your email address</p>
+      <div>
+        <input type="text" class="inputField" placeholder="Email">
+      </div>
+      <div>
+        <input type="password" class="inputField" placeholder="Password">
+      </div>
+      <div class="rememberMeDiv" id="rememberMeDiv">
+        <p class="f-l">
+          Remember me
+        </p>
+        <p class="f-r">
+          Forgot password?
+        </p>
+      </div>
+      <div>
+        <button class="signIn" id="signIn">Sign in</button>
+      </div>
+    </div>
+  </div>
+  <div class="comp2" id="comp2">
+    <div class="signUpBlock" id="signUpBlock">
+      <div class="logoBlock">
+        <img src="../assets/Logo white.svg">
+      </div>
+      <div class="dontHave">
+        <p class="haveText" id="haveText">Don't have an account?</p>
+      </div>
+      <div class="border2"></div>
+      <div>
+        <p class="fill" id="fill">Fill in some basic stuff so that we get to know you</p>
+        <button (click)="SignUpClicked()" class="button2" id="button2">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

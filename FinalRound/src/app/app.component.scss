@@ -1,0 +1,147 @@
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 635px;
+}
+
+.comp1{
+    width: 60%;
+    transition : all 0.3s ease-in-out 0.3s;
+}
+
+.comp2{
+    width: 40%;
+    float: left;
+    background-color: rgba(51, 122, 183, 1.0);
+}
+
+.helloBlock{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.signUpBlock{
+    text-align: center;
+    margin-top: 20%;
+}
+
+.border {
+    border-bottom: 3px solid rgba(51, 122, 183, 1.0);
+    width: 11%;
+    align-content: center;
+    margin-left: 43%;
+}
+
+.hello{
+    color: rgba(51, 122, 183, 1.0);
+    margin-bottom: 16px;
+}
+
+.socialIcons1{
+    width: 5%;
+    margin-left: -16px;
+    margin-right: 25px;
+}
+
+.socialIcons2{
+    width: 5%;
+}
+
+.socialLinks{
+    margin-top: 16px;
+}
+
+.text1{
+    font-size: 21px;
+    color: #a9b0b7;
+}
+
+.inputField{
+    height: 35px;
+    width: 300px;
+    border: 1px solid #ded3d3;
+    padding-left: 10px;
+    border-radius: 2px;
+    margin-top: 16px;
+}
+
+.rememberMeDiv{
+    width: 314px;
+    margin-left: 26%;
+    color: #7f7878;
+    font-size: 12px;
+}
+
+.f-l{
+    float: left;
+}
+
+.f-r{
+    float: right;
+}
+
+.signIn{
+    margin-top: 3%;
+    width: 35%;
+    height: 42px;
+    background-color: #337ab7;
+    border-radius: 25px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.signIn:hover{
+    background-color: #2618ec;
+}
+
+.logoBlock{
+    margin-top: 170px;
+}
+
+.dontHave{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.border2{
+    border-bottom: 3px solid #729bbd;
+    width: 15%;
+    align-content: center;
+    margin-left: 43%;
+    margin-bottom: 15px;
+}
+
+.haveText{
+    margin: 15px 0 10px 0;
+}
+
+.fill{
+    color: white;
+    font-size: 20px;
+    width: 53%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.button2{
+    margin-top: 3%;
+    width: 42%;
+    height: 42px;
+    background-color: #337ab7;
+    border-radius: 25px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border: 1px solid white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.button2:hover{
+    border: 2px solid white;
+}
