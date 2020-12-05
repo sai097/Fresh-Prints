@@ -1,0 +1,84 @@
+<div class="signUpBlock" id="signUpBlock">
+  <div class="logoBlock">
+    <img class="logo1" *ngIf="!customerAlready" src="../assets/Logo white.svg" [ngClass]="contentAnimate?'logo1Animate':''">
+    <img class="logo2" *ngIf="customerAlready" src="../assets/Logo white.svg" [ngClass]="contentAnimate?'logo2Animate':''">
+  </div>
+  <div class="textBlock" *ngIf="!customerAlready" [ngClass]="contentAnimate?'dontHaveAnimate':''">
+    <div class="dontHave">
+      <p class="haveText" id="haveText">Don't have an account?</p>
+    </div>
+    <div class="border2"></div>
+    <div>
+      <p class="fill" id="fill">Fill in some basic stuff so that we get to know you</p>
+    </div>
+  </div>
+  <div class="textBlock2" *ngIf="customerAlready" [ngClass]="contentAnimate?'textBlock2Animate':''">
+    <div class="dontHave">
+      <p class="haveText" id="haveText">Already have an account?</p>
+    </div>
+    <div class="border2"></div>
+    <div>
+      <p class="fill" id="fill">Welcome back! We've missed you.</p>
+    </div>
+  </div>
+  <button (click)="onClick()" class="button2" id="button2">
+    <span class="buttonText" *ngIf="!customerAlready" [ngClass]="contentAnimate?'buttonTextAnimate':''">Sign up</span>
+    <span class="buttonText2" *ngIf="customerAlready" [ngClass]="contentAnimate?'buttonText2Animate':''">Sign in</span>
+  </button>
+</div>
+
+<div class="circle1" [ngClass]="customerAlready?'circle1Animate':''">
+  <img src="../../assets/Oval Copy 2.png">
+</div>
+<div class="circle1State2" [ngClass]="customerAlready?'circle1AnimateState2':''">
+  <img src="../../assets/Oval Copy 2.png">
+</div>
+
+<div class="circle2" [ngClass]="customerAlready?'circle2Animate':''">
+  <img src="../../assets/Oval Copy 7.png">
+</div>
+<div class="circle2State2" [ngClass]="customerAlready?'circle2AnimateState2':''">
+  <img src="../../assets/Oval Copy 7.png">
+</div>
+
+<div class="rectangle1" [ngClass]="customerAlready?'rectangle1Animate':''">
+  <img src="../../assets/Group 13.png">
+</div>
+<div class="rectangle1State2" [ngClass]="customerAlready?'rectangle1AnimateState2':''">
+  <img src="../../assets/Left Group 13.png">
+</div>
+
+<div class="circle3" [ngClass]="customerAlready?'circle3Animate':''">
+  <img src="../../assets/Circle.png">
+</div>
+<div class="circle3State2" [ngClass]="customerAlready?'circle3AnimateState2':''">
+  <img src="../../assets/Left Circle.png">
+</div>
+
+<div class="circle4" [ngClass]="customerAlready?'circle4Animate':''">
+  <img src="../../assets/Oval Copy.png">
+</div>
+<div class="circle4State2" [ngClass]="customerAlready?'circle4AnimateState2':''">
+  <img src="../../assets/Left Oval Copy.png">
+</div>
+
+<div class="circle5" [ngClass]="customerAlready?'circle5Animate':''">
+  <img src="../../assets/Oval Copy 5.png">
+</div>
+<div class="circle5State2" [ngClass]="customerAlready?'circle5AnimateState2':''">
+  <img src="../../assets/Oval Copy 5.png">
+</div>
+
+<div class="rectangle2" [ngClass]="customerAlready?'rectangle2Animate':''">
+  <img src="../../assets/tablate.png">
+</div>
+<div class="rectangle2State2" [ngClass]="customerAlready?'rectangle2AnimateState2':''">
+  <img src="../../assets/Left tablate.png">
+</div>
+
+<div class="circle6" [ngClass]="customerAlready?'circle6Animate':''">
+  <img src="../../assets/Oval Copy 6.png">
+</div>
+<div class="circle6State2" [ngClass]="customerAlready?'circle6AnimateState2':''">
+  <img src="../../assets/Left Oval Copy 6.png">
+</div>

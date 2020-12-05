@@ -1,46 +1,43 @@
 <div class="container">
-  <div class="comp1" id="comp1">
+  <div class="comp1" id="comp1" [ngClass]="contentAnimate?'animate':''">
     <div class="helloBlock" id="helloBlock">
-      <h1 class="hello" id="hello">Hello friend!</h1>
+      <h1 class="hello" id="hello">{{ customerAlready ? 'Create your account' : 'Hello friend!' }}</h1>
       <div class="border"></div>
       <div class="socialLinks">
         <img class="socialIcons1" src="../assets/facebook.png">
-        <img class="socialIcons2" src="../assets/facebook.png">
+        <img class="socialIcons2" src="../assets/Google2.jpg">
       </div>
-      <p class="text1" id="text1">or use your email address</p>
+      <div class="text1" id="text1">
+        {{ customerAlready ? 'or use your email to create account' : 'or use your email address' }}
+      </div>
+      <div class="relative" *ngIf="customerAlready">
+        <input type="text" class="inputField" placeholder="Your name">
+        <img class="input-icons user" src="../assets/user-profile.svg">
+      </div>
+      <div class="relative">
+        <input type="text" class="inputField" [ngClass]="customerAlready?'inputField2':''" placeholder="Email">
+        <img class="input-icons" src="../assets/envelope.svg" [ngClass]="customerAlready?'':'user'" placeholder="Email">
+      </div>
+      <div class="relative">
+        <input type="password" class="inputField inputField2" placeholder="Password">
+        <img class="input-icons" src="../assets/eye.svg">
+      </div>
+      <div class="rememberMeDiv" id="rememberMeDiv" *ngIf="!customerAlready">
+        <div class="checkBox"></div>
+        <div class="rememberMe">
+          <span class="f-l">Remember me</span>
+        </div>
+        <div class="forgotPassword">
+          <span class="f-r">Forgot password?</span>
+        </div>
+      </div>
       <div>
-        <input type="text" class="inputField" placeholder="Email">
-      </div>
-      <div>
-        <input type="password" class="inputField" placeholder="Password">
-      </div>
-      <div class="rememberMeDiv" id="rememberMeDiv">
-        <p class="f-l">
-          Remember me
-        </p>
-        <p class="f-r">
-          Forgot password?
-        </p>
-      </div>
-      <div>
-        <button class="signIn" id="signIn">Sign in</button>
+        <button class="signIn" id="signIn">{{ customerAlready ? 'Sign up' : 'Sign in' }}</button>
       </div>
     </div>
   </div>
-  <div class="comp2" id="comp2">
-    <div class="signUpBlock" id="signUpBlock">
-      <div class="logoBlock">
-        <img src="../assets/Logo white.svg">
-      </div>
-      <div class="dontHave">
-        <p class="haveText" id="haveText">Don't have an account?</p>
-      </div>
-      <div class="border2"></div>
-      <div>
-        <p class="fill" id="fill">Fill in some basic stuff so that we get to know you</p>
-        <button (click)="SignUpClicked()" class="button2" id="button2">Sign Up</button>
-      </div>
-    </div>
+  <div class="comp2" id="comp2" [ngClass]="contentAnimate?'animate1':''">
+    <app-second-component (signUpClicked)="signUpClicked($event)"></app-second-component>
   </div>
 </div>
 <router-outlet></router-outlet>
